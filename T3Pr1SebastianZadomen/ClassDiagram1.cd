@@ -3,16 +3,28 @@
   <Class Name="T3Pr1SebastianZadomen.EnergySystem">
     <Position X="6" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAABAAAAAAAAAAABAAAABAAAAAA=</HashCode>
       <FileName>EnergySystem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="T3Pr1SebastianZadomen.SolarSystem">
     <Position X="3.25" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="T3Pr1SebastianZadomen.SolarSystem.SolarSystem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SolarSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SolarSystem.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="T3Pr1SebastianZadomen.WindSystem">
     <Position X="6" Y="3" Width="1.5" />
