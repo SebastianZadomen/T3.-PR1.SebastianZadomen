@@ -7,5 +7,8 @@ namespace T3Pr1SebastianZadomen
 {
     public interface IEnergyCalculation
     {
+        double SolarEnergyGenerated(double sunHours);
+        double WindEnergyGenerated(double windSpeed);
+        double HydroelectricEnergyGenerated(double waterFlow);
     }
 }

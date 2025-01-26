@@ -45,7 +45,7 @@
   <Interface Name="T3Pr1SebastianZadomen.IEnergyCalculation">
     <Position X="9.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAEAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>IEnergyCalculation.cs</FileName>
     </TypeIdentifier>
   </Interface>
