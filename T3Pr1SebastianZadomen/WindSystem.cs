@@ -9,6 +9,10 @@ namespace T3Pr1SebastianZadomen
     {
         public double WindSpeed { get; set; }
 
+        public WindSystem(double hours)
+        {
+            WindSpeed = hours;
+        }
         public double WindEnergyGenerated(double windSpeed)
         {
             return Math.Pow(windSpeed, 3) * 0.2;

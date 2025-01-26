@@ -9,7 +9,11 @@ namespace T3Pr1SebastianZadomen
         {
             public double SunHours { get; set; }
 
-            public double SolarEnergyGenerated(double sunHours)
+        public SolarSystem(double hours)
+        {
+            SunHours = hours;
+        }
+        public double SolarEnergyGenerated(double sunHours)
             {
                 return sunHours * 1.5;
             }

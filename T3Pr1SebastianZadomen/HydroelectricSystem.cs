@@ -9,6 +9,10 @@ namespace T3Pr1SebastianZadomen
     {
         public double WaterFlow { get; set; }
 
+        public HydroelectricSystem(double hours)
+        {
+            WaterFlow = hours;
+        }
         public double HydroelectricEnergyGenerated(double waterFlow)
         {
             return waterFlow * 9.8 * 0.8;
