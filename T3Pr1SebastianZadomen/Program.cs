@@ -170,7 +170,7 @@ namespace T3PR1SebastianZadomen
         /// <param name="countLimit">The maximum number of simulations allowed.</param>
         public static void SimulateHydroelectricSystem(double waterFlow, int countLimit)
         {
-            if (simulationCount < countLimit)
+            if (simulationCount >= countLimit)
             {
                 Console.WriteLine("\nYou have exceeded the simulation limit. Back to the main menu...\n");
                 Console.WriteLine(MainMenu + "\n");
