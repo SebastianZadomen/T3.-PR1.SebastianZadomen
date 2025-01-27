@@ -10,5 +10,6 @@ namespace T3Pr1SebastianZadomen
         double SolarEnergyGenerated(double sunHours);
         double WindEnergyGenerated(double windSpeed);
         double HydroelectricEnergyGenerated(double waterFlow);
+
     }
 }
