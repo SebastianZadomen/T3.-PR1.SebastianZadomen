@@ -3,6 +3,9 @@ using T3Pr1SebastianZadomen;
 
 namespace T3PR1SebastianZadomen
 {
+    /// <summary>
+    /// This is the beginning of our program and is responsible for distributing the initial structure. It displays a welcome message and shows the main menu.
+    /// </summary>
     public static class Program
     {
         const string MainMenu = "1. Start simulation \n2. View simulation report \n3. Exit";
@@ -20,6 +23,9 @@ namespace T3PR1SebastianZadomen
             MainMenuHandler();
         }
 
+        /// <summary>
+        /// Main menu and allows the user to select different options.It will repeat until the user chooses to exit.
+        /// </summary>
         public static void MainMenuHandler()
         {
             bool flag = true;
@@ -52,7 +58,9 @@ namespace T3PR1SebastianZadomen
                 }
             }
         }
-
+        /// <summary>
+        /// Menu to select an energy system and distribute the values entered. Repeats until the simulation limit is reached.
+        /// </summary>
         public static void EnergySystemMenu()
         {
             Console.WriteLine("\n" + MsgCount + "\n");
@@ -112,6 +120,11 @@ namespace T3PR1SebastianZadomen
             }
         }
 
+        /// <summary>
+        /// Simulates and calculates the energy generated based on the number of sunlight hours.
+        /// </summary>
+        /// <param name="hours">The number of hours of sunlight available.</param>
+        /// <param name="countLimit">The maximum number of simulations allowed.</param>
         public static void SimulateSolarSystem(double hours, int countLimit)
         {
             if (simulationCount >= countLimit)
@@ -129,6 +142,11 @@ namespace T3PR1SebastianZadomen
             simulationCount++;
         }
 
+        /// <summary>
+        /// Simulates and  calculates the energy generated based on the wind speed.
+        /// </summary>
+        /// <param name="windSpeed">The wind speed </param>
+        /// <param name="countLimit">The maximum number of simulations allowed.</param>
         public static void SimulateWindSystem(double windSpeed, int countLimit)
         {
             if (simulationCount >= countLimit)
@@ -145,7 +163,11 @@ namespace T3PR1SebastianZadomen
             simulationResults[simulationCount] = new SimulationResult("Wind System", date, energyGenerated, time);
             simulationCount++;
         }
-
+        /// <summary>
+        /// Simulates and calculates the energy generated based on the water flow.
+        /// </summary>
+        /// <param name="waterFlow">Amount of water flow .</param>
+        /// <param name="countLimit">The maximum number of simulations allowed.</param>
         public static void SimulateHydroelectricSystem(double waterFlow, int countLimit)
         {
             if (simulationCount < countLimit)
@@ -163,6 +185,10 @@ namespace T3PR1SebastianZadomen
             simulationCount++;
         }
 
+        /// <summary>
+        /// Requests and validates the date input from the user in DD/MM/YYYY format.
+        /// </summary>
+        /// <returns>string date = The validated date string</returns>
         public static string RequestDate()
         {
             string date = "";
@@ -185,11 +211,15 @@ namespace T3PR1SebastianZadomen
 
             return date;
         }
+        /// <summary>
+        /// Requests and validates the time input to the user in HH:MM format.
+        /// </summary>
+        /// <returns>string time = The validated time string </returns>
         public static string RequestTime()
         {
             string time = "";
             bool validTime = false;
-
+            
             while (!validTime)
             {
                 Console.WriteLine("\nPlease enter the time in HH:MM format (24-hour):");
@@ -211,9 +241,12 @@ namespace T3PR1SebastianZadomen
             return time;
         }
 
-
+        /// <summary>
+        /// Displays the results in an array string stored in a class.
+        /// </summary>
         public static void ShowSimulationResults()
         {
+            
             if (simulationCount == 0)
             {
                 Console.WriteLine("\nNo simulations have been performed yet.\n");
@@ -232,7 +265,7 @@ namespace T3PR1SebastianZadomen
 
                 Console.WriteLine(new string('-', 80)); 
             }
-
+            
             Console.WriteLine("\n" + MainMenu);
         }
     }

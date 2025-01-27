@@ -12,16 +12,8 @@
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
-    <NestedTypes>
-      <Class Name="T3Pr1SebastianZadomen.SolarSystem.SolarSystem" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>SolarSystem.cs</NewMemberFileName>
-        </TypeIdentifier>
-        <Lollipop Position="0.2" />
-      </Class>
-    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAQAAAEAAAIAAAAABAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>SolarSystem.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -43,14 +35,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="T3Pr1SebastianZadomen.SimulationResult">
-    <Position X="1.5" Y="0.75" Width="1.5" />
+    <Position X="1.75" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAAABAAgAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAAABAAgAQA=</HashCode>
       <FileName>SimulationResult.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="T3Pr1SebastianZadomen.IEnergyCalculation">
-    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Position X="9" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>IEnergyCalculation.cs</FileName>
