@@ -21,6 +21,7 @@ namespace T3Pr1SebastianZadomen
             Time = time;
         }
 
+        //This method was mainly to display the results but since it was in a table format I had to discard that function.
         public override string ToString()
         {
             return $"System: {SystemType}, Date: {Date}, Time {Time} Energy Generated: {EnergyGenerated} kWh";

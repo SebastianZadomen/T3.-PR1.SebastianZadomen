@@ -199,7 +199,9 @@ namespace T3PR1SebastianZadomen
                 Console.WriteLine("\nPlease enter the date in DD/MM/YYYY format:");
                 date = Console.ReadLine();
 
-                if (date != null && date.Length == 10 && date[2] == '/' && date[5] == '/')
+                if (date != null && date.Length == 10 && date[2] == '/' && date[5] == '/' &&
+                   int.TryParse(date.Substring(0, 2), out int day) && day >= 1 && day <= 31 &&
+                   int.TryParse(date.Substring(3, 2), out int month) && month >= 1 && month <= 12)
                 {
                     validDate = true;
                 }
